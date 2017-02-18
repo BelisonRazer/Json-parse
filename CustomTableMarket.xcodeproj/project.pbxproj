@@ -12,6 +12,8 @@
 		C11876981E58481A002479A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11876961E58481A002479A1 /* Main.storyboard */; };
 		C118769A1E58481A002479A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11876991E58481A002479A1 /* Assets.xcassets */; };
 		C118769D1E58481A002479A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C118769B1E58481A002479A1 /* LaunchScreen.storyboard */; };
+		C11876A51E585067002479A1 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11876A41E585067002479A1 /* CustomTableViewCell.swift */; };
+		C11876A91E585D24002479A1 /* catalog3.json in Resources */ = {isa = PBXBuildFile; fileRef = C11876A81E585D24002479A1 /* catalog3.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C11876991E58481A002479A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C118769C1E58481A002479A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C118769E1E58481A002479A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11876A41E585067002479A1 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C11876A81E585D24002479A1 /* catalog3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = catalog3.json; path = CustomTableMarket/catalog3.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			children = (
 				C11876911E58481A002479A1 /* CustomTableMarket */,
 				C11876901E58481A002479A1 /* Products */,
+				C11876A81E585D24002479A1 /* catalog3.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +65,7 @@
 				C11876991E58481A002479A1 /* Assets.xcassets */,
 				C118769B1E58481A002479A1 /* LaunchScreen.storyboard */,
 				C118769E1E58481A002479A1 /* Info.plist */,
+				C11876A41E585067002479A1 /* CustomTableViewCell.swift */,
 			);
 			path = CustomTableMarket;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 				C118769D1E58481A002479A1 /* LaunchScreen.storyboard in Resources */,
 				C118769A1E58481A002479A1 /* Assets.xcassets in Resources */,
 				C11876981E58481A002479A1 /* Main.storyboard in Resources */,
+				C11876A91E585D24002479A1 /* catalog3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11876A51E585067002479A1 /* CustomTableViewCell.swift in Sources */,
 				C11876951E58481A002479A1 /* ViewController.swift in Sources */,
 				C11876931E58481A002479A1 /* AppDelegate.swift in Sources */,
 			);
@@ -300,6 +308,7 @@
 				C11876A31E58481A002479A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
