@@ -57,21 +57,17 @@ class SafeJsonObject: NSObject {
                             self.tableView.reloadData()
                         }
                     }
-                    
-                    print(catalogs[5].name!)
-                    
+                    //print(catalogs[5].name!)
                 }
                 
             } catch let err {
                 print(err)
             }
-            
         }
         
         navigationItem.title = "Catalog"
         
         tableView?.backgroundColor = UIColor(white: 0.95, alpha: 1)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -92,6 +88,26 @@ class SafeJsonObject: NSObject {
         cell.smallDescriptionLabel.text = catalogs[indexPath.item].title
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! DetailViewController
+        let upSender = sender as! Array<Any>
+        
+        let id = upSender[4] as! Int
+        
+        vc.id = id
+        vc.setName = upSender[0] as! String
+        vc.setPrice = upSender[1] as! String
+        vc.setFullDescription = upSender[2] as! String
+        vc.setImage = upSender[3] as! String
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let toObject = catalogs[indexPath.item]
+        
+        performSegue(withIdentifier: "toDetail", sender: [toObject.name!, toObject.price!, toObject.summary!, toObject.image!, indexPath.item])
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
